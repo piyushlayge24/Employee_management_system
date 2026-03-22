@@ -1,6 +1,22 @@
 #  Project Setup Guide
 
-## 📁 Project Structure
+{   if you want this project in your system,
+    first open the vs code and open the folder where you want this file,
+    open terminal and run this command (cd folderNAme),
+    then run " git clone https://github.com/piyushlayge24/Employee_management_system.git "
+    
+    FOR FRONTEND
+    after run this command all the files comes in your folder ,
+    then run the command cd Frontend after that run npm run dev "The frontend will run",
+   
+    FOR InterviewModule(Backend)
+    open the InterviewModule folder in visual studio ,
+    after that open InterviewModule.sln file and run this project
+
+}
+
+
+ Project Structure
 
 This project contains three main parts:
 
