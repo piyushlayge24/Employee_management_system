@@ -1,0 +1,104 @@
+#  Project Setup Guide
+
+## 📁 Project Structure
+
+This project contains three main parts:
+
+1. Frontend – (React JS)
+2. InterviewModule(Backend) – (.NET / C# API)
+3. Database – (SQL Server .sql file)
+
+Project Folder
+│
+├── frontend/                         → Frontend source code
+├── InterviewModule(backend)/         → Backend API project
+├── database.sql                      → Database script file
+└── README.txt                        → Setup instructions
+
+
+ Prerequisites (Required Software)
+
+Before running the project, install the following:
+
+ Node.js (for frontend)
+ Visual Studio (for backend)
+ SQL Server Management Studio (SSMS)
+ .NET SDK
+
+
+Step 1: Setup Database
+
+1. Open SQL Server Management Studio (SSMS)
+2. Connect to your SQL Server
+3. Create a new database (example: `MyProjectDB`)
+4. Open the file:
+
+   database.sql
+   
+5. Execute the script
+
+This will create all tables and data required for the project.
+
+
+
+Step 2: Run Backend (.NET API)
+
+1. Open the InterviewModule(backend) folder in Visual Studio
+
+2. Open the .sln file
+
+3. Go to:
+
+   appsettings.json
+
+4. Update your connection string:
+
+   "ConnectionStrings": {
+       "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=MyProjectDB;Trusted_Connection=True;"
+   }
+
+5. Run the project:
+
+    Press  Run button OR press "Ctrl + F5"
+
+6. Backend will start on:
+
+   https://localhost:xxxx
+
+
+Step 3: Run Frontend
+
+1. Open frontend folder in VS Code
+2. Open terminal and run:
+
+npm install
+npm run dev
+
+
+3. Frontend will start on:
+
+
+http://localhost:5173
+
+
+Step 4: Connect Frontend with Backend
+
+In frontend project, find API base URL file (example):
+
+src/services/api.js
+
+Update backend URL:
+
+const BASE_URL = "https://localhost:7081/api/Employee";
+
+How to Use the Project
+
+1. Start Backend
+2. Start Frontend
+3. Open browser:
+
+http://localhost:3000
+
+
+Your Name
+PIYUSH LAYGE
