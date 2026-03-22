@@ -1,0 +1,121 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 700;
+}
+
+.btn-add-employee {
+    padding: 0.75rem 1.25rem;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.2);
+}
+
+.btn-add-employee:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+}
+
+.plus-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1rem;
+}
+
+.employee-table th {
+    background: #f8f9fa;
+    color: #7f8c8d;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #edf2f7;
+}
+
+.employee-table td {
+    padding: 1.25rem 1rem;
+    border-bottom: 1px solid #edf2f7;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+.employee-table tr:hover td {
+    background-color: #fcfdfe;
+}
+
+.employee-table tr:last-child td {
+    border-bottom: none;
+}
+
+.actions-cell {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-edit {
+    background: #ebf5ff;
+    color: #3182ce;
+    border: 1px solid #bee3f8;
+}
+
+.btn-edit:hover {
+    background: #3182ce;
+    color: white;
+}
+
+.btn-delete {
+    background: #fff5f5;
+    color: #e53e3e;
+    border: 1px solid #fed7d7;
+}
+
+.btn-delete:hover {
+    background: #e53e3e;
+    color: white;
+}
+
+.no-data {
+    text-align: center;
+    padding: 3rem !important;
+    color: #a0aec0;
+    font-style: italic;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}

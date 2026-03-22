@@ -1,0 +1,15 @@
+CREATE DATABASE EmployeeDB
+
+USE EmployeeDB
+
+CREATE TABLE Employees (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    FirstName NVARCHAR(100) NOT NULL,
+    LastName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(255) NOT NULL,
+    Department NVARCHAR(100) NOT NULL,
+    Salary DECIMAL(18,2) NOT NULL,
+    HireDate DATETIME2 NOT NULL
+);
+ 
+SELECT * FROM Employees;
